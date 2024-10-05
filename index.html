@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form novalidate>
+        <p>
+          <label for="email">Email</label>
+          <input required id="email" type="email">
+          <span class="error"></span>
+        </p>
+        <p>
+          <label for="country">Country</label>
+          <select required id="country">
+            <option disabled selected>Select a country</option>
+            <option value="ch">Switzerland</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="nl">The Netherlands</option>
+          </select>
+          <span class="error"></span>
+        </p>
+        <p>
+          <label for="zipCode">Zip Code</label>
+          <input required id="zipCode" type="text">
+          <span class="error"></span>
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input required id="password" type="password">
+          <span class="error"></span>
+        </p>
+        <p>
+          <label for="confirmPassword">Confirm Password</label>
+          <input required id="confirmPassword" type="password">
+          <span class="error"></span>
+        </p>
+        <span class="submitError error"></span>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
